@@ -1,7 +1,40 @@
 import React from 'react'
+import Card from './Card'
+import alexa from '../assets/alexa.png'
+import cortana from '../assets/cortana.png'
+import siri from '../assets/siri.png'
 
 const Cards = () => {
-  return <div>Cards</div>
+  const arryObj = [
+    {
+      img: alexa,
+      title: 'alexa',
+      describe: 'alexa is from amazon',
+    },
+    {
+      img: cortana,
+      title: 'cortana',
+      describe: 'cortana is from the world',
+    },
+    {
+      img: siri,
+      title: 'siri',
+      describe: 'siri is from apple',
+    },
+  ]
+
+  return (
+    <>
+      {arryObj.map((item, index) => (
+        <Card
+          key={index}
+          title={item.title}
+          img={item.img}
+          describe={item.describe}
+        />
+      ))}
+    </>
+  )
 }
 
 export default Cards
