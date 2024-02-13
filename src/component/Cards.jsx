@@ -25,7 +25,7 @@ const Cards = () => {
 
   return (
     <>
-      <div className="w-[100vw] h-[100vh] flex flex-row text-center items-center justify-evenly">
+      <div className="w-[100vw] h-[100vh] flex flex-row text-center items-center justify-evenly flex-wrap gap-4 p-4">
         {arryObj.map((item, index) => (
           <Card
             key={index}
