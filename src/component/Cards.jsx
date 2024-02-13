@@ -1,18 +1,22 @@
 import React from 'react'
 import Card from './Card'
+import alexa from '../assets/alexa.png'
+import cortana from '../assets/cortana.png'
+import siri from '../assets/siri.png'
+
 const Cards = () => {
   const arryObj = [
     {
-      img: 'https://images.unsplash.com/photo-15043494',
-      title: 'Ameer',
+      img: alexa,
+      title: 'alexa',
     },
     {
-      img: 'https://images.unsplash.com/photo-1503494',
-      title: 'Ahmed',
+      img: cortana,
+      title: 'cortana',
     },
     {
-      img: 'https://images.unsplash.com/photo-15042494',
-      title: 'Ali',
+      img: siri,
+      title: 'siri',
     },
   ]
 
