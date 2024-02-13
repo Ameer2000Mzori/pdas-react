@@ -9,21 +9,29 @@ const Cards = () => {
     {
       img: alexa,
       title: 'alexa',
+      describe: 'alexa is from amazon',
     },
     {
       img: cortana,
       title: 'cortana',
+      describe: 'cortana is from the world',
     },
     {
       img: siri,
       title: 'siri',
+      describe: 'siri is from apple',
     },
   ]
 
   return (
     <>
       {arryObj.map((item, index) => (
-        <Card key={index} title={item.title} img={item.img} />
+        <Card
+          key={index}
+          title={item.title}
+          img={item.img}
+          describe={item.describe}
+        />
       ))}
     </>
   )
