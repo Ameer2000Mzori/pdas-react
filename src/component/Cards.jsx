@@ -25,14 +25,16 @@ const Cards = () => {
 
   return (
     <>
-      {arryObj.map((item, index) => (
-        <Card
-          key={index}
-          title={item.title}
-          img={item.img}
-          describe={item.describe}
-        />
-      ))}
+      <div className="w-[100vw] h-[100vh] flex flex-row text-center items-center justify-evenly flex-wrap gap-4 p-4">
+        {arryObj.map((item, index) => (
+          <Card
+            key={index}
+            title={item.title}
+            img={item.img}
+            describe={item.describe}
+          />
+        ))}
+      </div>
     </>
   )
 }
